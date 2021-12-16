@@ -1,0 +1,5 @@
+pageObjectModel\RegisteringNewAccount.class
+pageObjectModel\AddingItemsToCart.class
+steps\TestClass.class
+pageObjectModel\Login_Logout.class
+steps\BaseClass.class

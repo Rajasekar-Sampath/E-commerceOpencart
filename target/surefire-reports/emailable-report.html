@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="7">Surefire suite</th></tr>
+<tr><td><a href="#t0">Surefire test</a></td><td class="num">1</td><td class="num attn">2</td><td class="num">0</td><td class="num">13,905</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">steps.TestClass</td><td><a href="#m0">teardown</a></td><td rowspan="1">1639544274728</td><td rowspan="1">2194</td></tr><tr><th colspan="4">Surefire test &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="5">steps.TestClass</td><td><a href="#m1">ReportEnd</a></td><td rowspan="1">1639544276933</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m2">setup</a></td><td rowspan="2">1639544276932</td><td rowspan="2">0</td></tr><tr class="skippedeven"><td><a href="#m3">setup</a></td></tr><tr class="skippedeven"><td><a href="#m4">teardown</a></td><td rowspan="2">1639544276932</td><td rowspan="2">0</td></tr><tr class="skippedeven"><td><a href="#m5">teardown</a></td></tr><tr><th colspan="4">Surefire test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="2">steps.TestClass</td><td><a href="#m6">verifyInvalidlogin</a></td><td rowspan="1">1639544276932</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m7">verifylogout</a></td><td rowspan="1">1639544276932</td><td rowspan="1">0</td></tr><tr><th colspan="4">Surefire test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">steps.TestClass</td><td><a href="#m8">verifylogin</a></td><td rowspan="1">1639544267758</td><td rowspan="1">6968</td></tr></tbody>
+</table>
+<h2>Surefire test</h2><h3 id="m0">steps.TestClass#teardown</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>[TestResult name=verifylogin status=SUCCESS method=TestClass.verifylogin()[pri:0, instance:steps.TestClass@23d2a7e8] output={null}]</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;SAMPATH&apos;, ip: &apos;192.168.43.201&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
+Driver info: driver.version: RemoteWebDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=96.0.4664.45 (76e4c1bb2ab4671b8beba3444e61c0f17584b2fc-refs/branch-heads/4664@{#947}), userDataDir=C:\Users\91894\AppData\Local\Temp\scoped_dir5492_2011731940}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:53905}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, browserVersion=96.0.4664.110, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
+Session ID: 3e87559350c05015ba8b395bd2aea83c
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:658)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:694)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:533)
+	at steps.TestClass.teardown(TestClass.java:213)
+Caused by: java.lang.RuntimeException: Process refused to die after 10 seconds, and couldn&apos;t taskkill it: Couldn&apos;t detect pid
+	at org.openqa.selenium.os.ProcessUtils.killWinProcess(ProcessUtils.java:133)
+	at org.openqa.selenium.os.ProcessUtils.killProcess(ProcessUtils.java:81)
+	at org.openqa.selenium.os.UnixProcess$SeleniumWatchDog.destroyHarder(UnixProcess.java:246)
+	at org.openqa.selenium.os.UnixProcess$SeleniumWatchDog.access$200(UnixProcess.java:200)
+	at org.openqa.selenium.os.UnixProcess.destroy(UnixProcess.java:126)
+	at org.openqa.selenium.os.CommandLine.destroy(CommandLine.java:153)
+	at org.openqa.selenium.remote.service.DriverService.stop(DriverService.java:221)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:94)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+	... 35 more
+Caused by: java.lang.RuntimeException: Couldn&apos;t detect pid
+	at org.openqa.selenium.os.ProcessUtils.getProcessId(ProcessUtils.java:195)
+	at org.openqa.selenium.os.ProcessUtils.killWinProcess(ProcessUtils.java:128)
+	... 43 more
+	at org.openqa.selenium.os.ProcessUtils.getProcessId(ProcessUtils.java:181)
+	... 44 more
+... Removed 37 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">steps.TestClass#ReportEnd</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">steps.TestClass#setup</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">steps.TestClass#setup</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">steps.TestClass#teardown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">steps.TestClass#teardown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">steps.TestClass#verifyInvalidlogin</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;SAMPATH&apos;, ip: &apos;192.168.43.201&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
+Driver info: driver.version: RemoteWebDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=96.0.4664.45 (76e4c1bb2ab4671b8beba3444e61c0f17584b2fc-refs/branch-heads/4664@{#947}), userDataDir=C:\Users\91894\AppData\Local\Temp\scoped_dir5492_2011731940}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:53905}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, browserVersion=96.0.4664.110, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
+Session ID: 3e87559350c05015ba8b395bd2aea83c
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:658)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:694)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:533)
+	at steps.TestClass.teardown(TestClass.java:213)
+Caused by: java.lang.RuntimeException: Process refused to die after 10 seconds, and couldn&apos;t taskkill it: Couldn&apos;t detect pid
+	at org.openqa.selenium.os.ProcessUtils.killWinProcess(ProcessUtils.java:133)
+	at org.openqa.selenium.os.ProcessUtils.killProcess(ProcessUtils.java:81)
+	at org.openqa.selenium.os.UnixProcess$SeleniumWatchDog.destroyHarder(UnixProcess.java:246)
+	at org.openqa.selenium.os.UnixProcess$SeleniumWatchDog.access$200(UnixProcess.java:200)
+	at org.openqa.selenium.os.UnixProcess.destroy(UnixProcess.java:126)
+	at org.openqa.selenium.os.CommandLine.destroy(CommandLine.java:153)
+	at org.openqa.selenium.remote.service.DriverService.stop(DriverService.java:221)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:94)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+	... 35 more
+Caused by: java.lang.RuntimeException: Couldn&apos;t detect pid
+	at org.openqa.selenium.os.ProcessUtils.getProcessId(ProcessUtils.java:195)
+	at org.openqa.selenium.os.ProcessUtils.killWinProcess(ProcessUtils.java:128)
+	... 43 more
+	at org.openqa.selenium.os.ProcessUtils.getProcessId(ProcessUtils.java:181)
+	... 44 more
+... Removed 37 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">steps.TestClass#verifylogout</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;SAMPATH&apos;, ip: &apos;192.168.43.201&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
+Driver info: driver.version: RemoteWebDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=96.0.4664.45 (76e4c1bb2ab4671b8beba3444e61c0f17584b2fc-refs/branch-heads/4664@{#947}), userDataDir=C:\Users\91894\AppData\Local\Temp\scoped_dir5492_2011731940}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:53905}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, browserVersion=96.0.4664.110, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
+Session ID: 3e87559350c05015ba8b395bd2aea83c
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:658)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:694)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:533)
+	at steps.TestClass.teardown(TestClass.java:213)
+Caused by: java.lang.RuntimeException: Process refused to die after 10 seconds, and couldn&apos;t taskkill it: Couldn&apos;t detect pid
+	at org.openqa.selenium.os.ProcessUtils.killWinProcess(ProcessUtils.java:133)
+	at org.openqa.selenium.os.ProcessUtils.killProcess(ProcessUtils.java:81)
+	at org.openqa.selenium.os.UnixProcess$SeleniumWatchDog.destroyHarder(UnixProcess.java:246)
+	at org.openqa.selenium.os.UnixProcess$SeleniumWatchDog.access$200(UnixProcess.java:200)
+	at org.openqa.selenium.os.UnixProcess.destroy(UnixProcess.java:126)
+	at org.openqa.selenium.os.CommandLine.destroy(CommandLine.java:153)
+	at org.openqa.selenium.remote.service.DriverService.stop(DriverService.java:221)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:94)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+	... 35 more
+Caused by: java.lang.RuntimeException: Couldn&apos;t detect pid
+	at org.openqa.selenium.os.ProcessUtils.getProcessId(ProcessUtils.java:195)
+	at org.openqa.selenium.os.ProcessUtils.killWinProcess(ProcessUtils.java:128)
+	... 43 more
+	at org.openqa.selenium.os.ProcessUtils.getProcessId(ProcessUtils.java:181)
+	... 44 more
+... Removed 37 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">steps.TestClass#verifylogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
